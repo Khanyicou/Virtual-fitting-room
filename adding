@@ -1,6 +1,0 @@
-  # Overlay interactive buttons for shirt selection
-        overlay_right_x = img.shape[1] - imgButtonRight.shape[1] - 10
-        overlay_left_x = 10
-
-        img[293:293 + imgButtonRight.shape[0], overlay_right_x:overlay_right_x + imgButtonRight.shape[1]] = imgButtonRight
-        img[293:293 + imgButtonLeft.shape[0], overlay_left_x:overlay_left_x + imgButtonLeft.shape[1]] = imgButtonLeft
