@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.fitting-room {
+    position: relative;
+    display: inline-block;
+}
+
+#canvas {
+    border: 1px solid #ccc;
+}
+
+#clothing-item {
+    position: absolute;
+    top: 50px; /* Adjust this value to fit the image correctly */
+    left: 50px; /* Adjust this value to fit the image correctly */
+    width: 150px; /* Adjust this value to fit the image correctly */
+    pointer-events: none;
+    opacity: 0.7; /* Adjust the transparency if needed */
+}
+

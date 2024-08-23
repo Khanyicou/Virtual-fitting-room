@@ -3,39 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Virtual Fitting Room</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-        #info {
-            position: absolute;
-            top: 10px;
-            width: 100%;
-            text-align: center;
-            z-index: 100;
-            color: #fff;
-            font-weight: bold;
-        }
-        #controls {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            z-index: 100;
-        }
-    </style>
+    <title>Virtual Fitting Room</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="info">Drag and drop items to adjust their position. Use the controls to add or remove items.</div>
-    <div id="controls">
-        <button onclick="addItem('tshirt')">Add T-Shirt</button>
-        <button onclick="addItem('pants')">Add Pants</button>
-        <button onclick="removeItem()">Remove Last Item</button>
+    <h1>Virtual Fitting Room</h1>
+    <div class="container">
+        <div class="upload-section">
+            <input type="file" id="upload-image" accept="image/*">
+        </div>
+        <div class="fitting-room">
+            <canvas id="canvas"></canvas>
+            <img id="clothing-item" src="tshirt.png" alt="T-Shirt">
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
